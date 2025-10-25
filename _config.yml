@@ -1,0 +1,196 @@
+# --------------------------
+# 테마 관련 설정
+# --------------------------
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "contrast"
+
+# --------------------------
+# 사이트 기본 정보
+# --------------------------
+locale: "ko"
+title: "Sangwonee.log"  # 블로그 제목
+title_separator: "-"  # 제목 구분자
+name: "윤상원"
+description: "개발 여정 기록"
+url: "https://sangwonee.github.io"
+baseurl: ""
+repository: "Sangwonee/Sangwonee.github.io"
+masthead_title: "Sangwonee.log"
+breadcrumbs: true
+enable_copy_code_button: true
+
+# --------------------------
+# 댓글 설정
+# --------------------------
+comments:
+  provider: false
+
+# --------------------------
+# 검색 기능 설정
+# --------------------------
+search: true
+search_full_content: true
+search_provider: lunr
+
+# --------------------------
+# 검색 엔진 인증
+# --------------------------
+google_site_verification:
+bing_site_verification:
+naver_site_verification:
+
+# --------------------------
+# 소셜 프로필 정보
+# --------------------------
+social:
+  type: "Person"
+  name: "윤상원"
+  links:
+    - "https://github.com/Sangwonee"
+
+# --------------------------
+# 방문자 통계
+# --------------------------
+analytics:
+  provider: false
+
+# --------------------------
+# 작성자 정보
+# --------------------------
+author:
+  name: "윤상원"
+  avatar: "/assets/images/profile.png"
+  bio: "The Fate of Engineer"
+  location: "Korea"
+  email: "sangw12477@gmail.com"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:sangw12477@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Sangwonee"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
+
+# --------------------------
+# 푸터(하단) 링크 설정
+# --------------------------
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Sangwonee"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
+  since: "2025"
+
+# --------------------------
+# 마크다운 및 코드 하이라이팅
+# --------------------------
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown
+highlighter: rouge
+
+# --------------------------
+# 스타일(SCSS) 설정
+# --------------------------
+sass:
+  sass_dir: _sass  # SCSS 폴더 위치
+  style: compressed  # CSS 압축 출력 모드
+
+# --------------------------
+# URL 구조 및 시간대
+# --------------------------
+permalink: /:categories/:title/  # 포스트 URL 구조
+timezone: "Asia/Seoul"  # 시간대 설정
+
+# --------------------------
+# 페이지네이션 (글 목록 나누기)
+# --------------------------
+paginate: 5  # 한 페이지에 표시할 글 수
+paginate_path: /page:num/
+pagination:
+  debug: false
+  collection: 'posts'
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+
+# --------------------------
+# 플러그인 설정
+# --------------------------
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# --------------------------
+# 포스트 기본 설정
+# --------------------------
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single         # 단일 포스트 레이아웃
+      author_profile: true   # 작성자 프로필 표시
+      read_time: true        # 읽는 시간 표시
+      comments: false        # 댓글 비활성화
+      share: true            # SNS 공유 버튼 표시
+      related: true          # 관련 글 표시
+
+# --------------------------
+# 카테고리 / 태그 아카이브
+# --------------------------
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# --------------------------
+# HTML 압축 (로딩 속도 향상)
+# --------------------------
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# --------------------------
+# 빌드 제외 목록
+# --------------------------
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - CHANGELOG
+  - LICENSE
+  - README
+  - tmp
+  - /docs
+  - /test
+keep_files:
+  - .git
+  - .svn
