@@ -2,6 +2,7 @@
 title: "전체 글 목록"
 layout: archive
 permalink: /blog/
+author_profile: true
 ---
 
 {% assign posts = site.posts %}

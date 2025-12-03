@@ -4,5 +4,8 @@ main:
     url: /
   - title: "About"
     url: /about/
+  - title: "Archive"
+    url: /blog/
   - title: "Categories"
     url: /categories/
+
