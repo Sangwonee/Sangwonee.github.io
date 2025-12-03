@@ -172,6 +172,7 @@ compress_html:
 # --------------------------
 include:
   - .htaccess
+  - _pages
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
