@@ -173,7 +173,6 @@ compress_html:
 # --------------------------
 include:
   - .htaccess
-  - _pages
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -198,3 +197,10 @@ keep_files:
 # 피드 숨기기
 atom_feed:
   hide: true
+
+# --------------------------
+# 컬렉션 설정
+# --------------------------
+collections:
+  pages:
+    output: true

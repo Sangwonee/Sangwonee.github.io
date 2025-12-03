@@ -1,4 +1,3 @@
-<!-- _pages/categories.md -->
 ---
 layout: categories
 title: "Categories"

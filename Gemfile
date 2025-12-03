@@ -1,2 +1,7 @@
 source "https://rubygems.org"
-gemspec
+gem "minimal-mistakes-jekyll"
+gem "jekyll-feed"
+gem "jekyll-sitemap"
+gem "jekyll-paginate"
+gem "jekyll-gist"
+gem "jekyll-include-cache"
